@@ -1,10 +1,10 @@
 """
 Command Line Interface for Calculator
-Example: python src/cli.py add 5 3
+Example: python -m src.cli add 5 3
 """
 import sys
 import click
-from calculator import add, subtract, multiply, divide, power, square_root
+from src.calculator import add, subtract, multiply, divide, power, square_root
 
 @click.command()
 @click.argument('operation')
@@ -34,9 +34,13 @@ def calculate(operation, num1, num2=None):
     except ValueError as e:
         click.echo(f"Error: {e}")
         sys.exit(1)
-    except Exception as e:
-        click.echo(f"Unexpected error: {e}")
+    except ZeroDivisionError:
+        click.echo("Error: Cannot divide by zero")
+        sys.exit(1)
+    except TypeError as e:
+        click.echo(f"Error: Invalid operands - {e}")
         sys.exit(1)
 
 if __name__ == '__main__':
-    calculate()
+    # Click handles argument parsing at runtime, pylint doesn't understand this
+    calculate()  # pylint: disable=no-value-for-parameter
