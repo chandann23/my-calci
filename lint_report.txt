@@ -1,0 +1,8 @@
+************* Module src.calculator
+src/calculator.py:20:1: W0511: TODO: Students will add multiply, divide, power, sqrt functions (fixme)
+src/calculator.py:21:0: C0116: Missing function or method docstring (missing-function-docstring)
+src/calculator.py:24:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.33/10 (previous run: 8.33/10, +0.00)
+
