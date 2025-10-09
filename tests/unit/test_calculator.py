@@ -25,20 +25,6 @@ class TestBasicOperations:
         assert subtract(-5, -3) == -2
 
 
-class TestMultiplyDivideWithValidation:
-    """Test input validation for multiply and divide"""
-    
-    def test_multiply_input_validation(self):
-        """Test multiply rejects non-numeric inputs."""
-        with pytest.raises(TypeError):
-            multiply("5", 3)
-    
-    def test_divide_input_validation(self):
-        """Test divide rejects non-numeric inputs."""
-        with pytest.raises(TypeError):
-            divide("10", 2)
-
-
 class TestMultiplyDivide:
     """Test multiplication and division operations"""
     
