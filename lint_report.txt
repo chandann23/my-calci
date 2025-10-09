@@ -1,8 +1,11 @@
-************* Module src.calculator
-src/calculator.py:20:1: W0511: TODO: Students will add multiply, divide, power, sqrt functions (fixme)
-src/calculator.py:21:0: C0116: Missing function or method docstring (missing-function-docstring)
-src/calculator.py:24:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module src.cli
+src/cli.py:32:0: C0303: Trailing whitespace (trailing-whitespace)
+src/cli.py:38:0: C0303: Trailing whitespace (trailing-whitespace)
+src/cli.py:12:0: E0401: Unable to import 'calculator' (import-error)
+src/cli.py:12:0: C0413: Import "from calculator import add, subtract, multiply, divide, power, square_root" should be placed at the top of the module (wrong-import-position)
+src/cli.py:12:0: W0611: Unused power imported from calculator (unused-import)
+src/cli.py:12:0: W0611: Unused square_root imported from calculator (unused-import)
 
 ------------------------------------------------------------------
-Your code has been rated at 8.33/10 (previous run: 8.33/10, +0.00)
+Your code has been rated at 7.96/10 (previous run: 7.96/10, +0.00)
 
